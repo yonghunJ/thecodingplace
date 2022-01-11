@@ -1,5 +1,6 @@
+
 const bundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: !!process.env.BUNDLE_ANALYZE,
+  enabled: process.env.BUNDLE_ANALYZE == 'YES',
 })
 
 module.exports = bundleAnalyzer({
